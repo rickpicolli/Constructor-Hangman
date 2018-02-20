@@ -4,15 +4,27 @@ var guessesLeft = 9;
 var wins = 0;
 var losses = 0;
 
-	var Letter = function(underline, boolean) {
-		this.underline = underline; //need to find a way to show the "_ _ _ _"
-		this.boolean = boolean;
-		this.correctLetter = function() {
-			if (correctLetter === letterOptions) {
-				//take off a "_" and then show the letter at that place
+	var LetterstoDisplay = function(letter) {
+		this.character = function(){ 
+		if (letter !== " ") {
+			letter === "_"
+		}
+		else {
+			letter === " ";
+		}
+		this.letter = letter;
+		this.currentVal = this.character;
+		this.boolean = false;
+	}
+}
 
-			}
-			else {
-				//push the letter to guessesSoFar and decrease 1 from guessesSoFar
-			}
+module.exports = HangmanLetter;
+		
 			
+//randombank
+//npm random word
+
+//need to check if a letter is not a " ", then "_", else " ".
+
+//I need to create a blank array to be the letter and another array to be to use .filter to get same letters to check in.
+
