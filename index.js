@@ -153,12 +153,13 @@ function gameScoreLogic() {
         if (wordList.length === 0) {
             console.log(" end of game");
         } else {
-        console.log("\n---------------------------------");
-        console.log("\n", currentWord.toUpperCase(), "was the word. You win!");
-        console.log("\n---------------------------------")
-        console.log("\n");
+            wins++
+            console.log("\n---------------------------------");
+            console.log("\n", currentWord.toUpperCase(), "was the word. You win!");
+            console.log("\n---------------------------------")
+            console.log("\n");
   
-        newGame();
+            newGame();
         }
     }
     if (guessesLeft === 0 && correctLetters.length !== currentLevel.secretWord.length) {
