@@ -17,8 +17,8 @@ node index.js
 
 
 * These are the npm packages I used and are needed to run the app
-	1. [twitter](https://www.npmjs.com/package/inquirer)
-	2. [spotify](https://www.npmjs.com/package/random-words)
+	1. [inquirer](https://www.npmjs.com/package/inquirer)
+	2. [random-words](https://www.npmjs.com/package/random-words)
 
 * to install these npm packages run these commands one at a time.
 ```
