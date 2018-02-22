@@ -12,7 +12,7 @@
 node index.js
 ```
 
-![Alt text](/images/img1.png?raw=true)
+![Alt text](/images/screenshot.png?raw=true)
 
 
 
