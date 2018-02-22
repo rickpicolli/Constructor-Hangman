@@ -2,7 +2,7 @@
 
 ### Introduction
 
-* I created a constructor Hangman game.
+* I created a constructor Hangman game using heroes and vilain names as words to guess.
 * It must be ran in the Terminal/Git.
 * To make this game work, you need to type in ```node index.js``` to get the first random word and start guessing the letters.
 
@@ -18,10 +18,8 @@ node index.js
 
 * These are the npm packages I used and are needed to run the app
 	1. [inquirer](https://www.npmjs.com/package/inquirer)
-	2. [random-words](https://www.npmjs.com/package/random-words)
 
 * to install these npm packages run these commands one at a time.
 ```
 npm install inquirer
-npm install random-words
 ```
