@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "alphabet": "^1.0.0",
+    "inquirer": "^5.1.0",
     "random-words": "^1.0.0"
   },
   "devDependencies": {},
