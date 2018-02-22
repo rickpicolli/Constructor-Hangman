@@ -5,6 +5,7 @@ const wordJS = require("./modules/Word.js");
 var guessesLeft = 10;
 var wins = 0;
 var losses = 0;
+var userChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var wordList  = ["wolverine", "batman", "black panther", "superman", "iron man", "aquaman", "wonder woman", "hawkeye", "spider-Man", "daredevil", "green arrow", "black canary", "captain america", "batgirl", "hellboy", "hulk", "iron fist", "catwoman", "elektra", "ghost rider", "thor", "robin", "silver surfer", "the human torch", "black widow", "professor xavier", "beast", "black lightning", "captain marvel", "doctor strange", "the vision", "ant-man", "supergirl", "captain planet"];
 var wordCounter = Math.floor(Math.random()*wordList.length);
 var currentLevel = new wordJS.Word(wordList[wordCounter]);
@@ -80,6 +81,7 @@ function playGame() {
     var upperUserGuess = answer.userGuess.toUpperCase();
     var indexCheckArray = wordJS.checkArray;
     //check to see if the letter has been guessed if not store if it has send message and replay turn
+    if (userChoices.includes(userGuess)) {
         if (lettersGuessed.includes(userGuess)) {
             console.log("\n");
             console.log("-----------------------");
@@ -124,6 +126,15 @@ function playGame() {
             gameScoreLogic();
             }
         } 
+    } else {
+        console.log("--------------------------------------");
+        console.log("\n");
+        console.log("This is not a letter! Please try again");
+        console.log("\n");
+        console.log("--------------------------------------");
+        playGame();
+
+    }
     })
 }
 
